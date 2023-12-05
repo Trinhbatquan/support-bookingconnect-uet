@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Thu thập phản hồi về hệ thống.</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/feedback.js"></script>
+</head>
+
+<body>
+    <div class="container fix-height">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mt-3">
+                    <span class="title">Phản hồi sinh viên về hệ thống</span>
+                </div>
+                <input type="text" id="psid" hidden>
+                <div class="form-group">
+                    <label for="customerName">Họ và tên sinh viên (<span style="color: red">*</span>)</label>
+                    <input type="text" id="customerName" class="form-control " placeholder="Họ và tên...">
+                    <div class="invalid-feedback">Trường này bắt buộc nhập.</div>
+                </div>
+                <div class="form-group">
+                    <label for="mssv">Mã số sinh viên (<span style="color: red">*</span>):</label>
+                    <input type="email" id="mssv" class="form-control" placeholder="Mã số sinh viên...">
+                    <div class="invalid-feedback">Trường này bắt buộc nhập.</div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Vấn đề liên quan đến: (<span style="color: red">*</span>):</label>
+                    <input type="text" id="subject" class="form-control" placeholder="Liên quan đến...">
+                    <div class="invalid-feedback">Trường này bắt buộc nhập.</div>
+                </div>
+                <div class="form-group">
+                    <label for="detail">Chi tiết vấn đề bạn gặp phải: (<span style="color: red">*</span>):</label>
+                    <textarea type="text" id="detail" class="form-control" placeholder="Chi tiết..."></textarea>
+                    <div class="invalid-feedback">Trường này bắt buộc nhập.</div>
+                </div>
+                <button class="btn btn-primary" id="btnReserveTable"> GỬI PHẢN HỒI </button>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="text-center">
+            <div style="display: flex; align-items: center; justify-content: center">
+                <span style="display: flex; align-items: center; justify-content: center" class="mr-3">
+                    <p> Support BookingConnect-UET </p>
+                </span>
+                <span style="display: flex; align-items: center; justify-content: center" class="ml-3">
+                    <p> Tạo bởi Sinh viên UET </p>
+                </span>
+            </div>
+        </div>
+    </footer> -->
+</body>
+
+</html>
